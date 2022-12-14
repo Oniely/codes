@@ -10,14 +10,14 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <a class="logo-container" href="#"><img src="images/Angelos.png" alt="logo" class="logo"></a>
 
         <nav>
             <ul class="navbar">
-                <li><a id="nav1" class="active" href="#">Home</a></li>
+                <li><a id="nav1" href="index.html">Home</a></li>
                 <li><a id="nav2" href="men.html">Men</a></li>
-                <li><a id="nav3" href="women.html">Women</a></li>
+                <li><a id="nav3" class="active" href="#">Women</a></li>
                 <li><a id="nav4" href="contact.html">Contact</a></li>
                 <li><a id="nav5" href="account.html">Account</a></li>
                 <li id="nav6" class="icon"><a href="#"><i class='bx bx-shopping-bag'></i></a></li>
@@ -26,29 +26,81 @@
 
     </header>
 
-    <section class="hero" style="background-image: url('images/bg3.jpg');">
-        <h4>New Arrivals</h4>
-        <h2>Super deals</h2>
-        <h1>On all products</h1>
-        <p>Save up to 70% off with coupons</p>
-        <a href="#qwe"><button style="background-image: url('images/q2.png')">Shop Now!</button></a>
+    <section>
+        <div class="na-header">
+            <h1>Women</h1>
+            <p>"Fearlessly Independent."</p>
+        </div>
     </section>
 
-    <section class="new-arrivals" id="qwe">
+    <section id="body">
+        <div class="preview">
+            <div class="slider">
+                <div class="slide">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
 
-        <div class="na-header">
-            <h1>New Arrivals</h1>
-            <p>"Just Do It."</p>
+                    <div class="st first">
+                        <img src="images/koujiaofangliao on Twitter.jfif" alt="drip">
+                    </div>
+                    <div class="st">
+                        <img src="images/nikes2.png" alt="drip">
+                    </div>
+                    <div class="st">
+                        <img src="images/nike3.jpg" alt="drip">
+                    </div>
+                    <div class="st">
+                        <img src="images/nikes3.jpg" alt="drip">
+                    </div>
+
+                    <div class="nav-auto">
+                        <div class="a-b1"></div>
+                        <div class="a-b2"></div>
+                        <div class="a-b3"></div>
+                        <div class="a-b4"></div>
+                    </div>
+
+                </div>
+                <div class="nav-m">
+                    <label for="radio1" class="m-btn"></label>
+                    <label for="radio2" class="m-btn"></label>
+                    <label for="radio3" class="m-btn"></label>
+                    <label for="radio4" class="m-btn"></label>
+                </div>
+            </div>
         </div>
+    </section>
+    <script type="text/javascript">
+        var counter = 1;
+        setInterval(function () {
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if (counter > 4) {
+                counter = 1;
+            }
+        }, 7000)
+    </script>
+
+    <section class="banner-container">
+        <div class="banner">
+            <h2>12.12 Sale</h2>
+            <p>Enjoy Discounted Products Till 12 Dec. - Use code <u>12Sale</u>.</p>
+            <a href="#products"><img src="images/nikebg.jpg" alt="sale"></a>
+        </div>
+    </section>
+
+    <section class="new-arrivals">
 
         <div class="sales">
             <div class="product-container">
 
                 <div class="products" id="products">
-                    <img src="images/men1.jpg" alt="Shoes">
+                    <img src="images/women1.jpg" alt="Shoes">
                     <div class="desc">
                         <span>Nike</span>
-                        <h5>Nike Air Force 1 Low Retro</h5>
+                        <h5>Nike Air Force 1 '07 SE - Orange</h5>
                         <div class="stars">
                             <i class='bx bxs-star'></i>
                             <i class='bx bxs-star'></i>
@@ -62,27 +114,10 @@
                 </div>
 
                 <div class="products">
-                    <img src="images/nike.jpg" alt="Shoes">
+                    <img src="images/women2.jpg" alt="Shoes">
                     <div class="desc">
                         <span>Nike</span>
-                        <h5>Nike Pegasus 39 Premium</h5>
-                        <div class="stars">
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                        </div>
-                        <h4>$135</h4>
-                    </div>
-                    <a href="#"><i class='bx bx-cart-alt cart'></i></a>
-                </div>
-
-                <div class="products">
-                    <img src="images/men2.jpg" alt="Shoes">
-                    <div class="desc">
-                        <span>Nike</span>
-                        <h5>Nike Air Force 1'07 LV8</h5>
+                        <h5>Nike Air Force 1 '07 SE - Pink</h5>
                         <div class="stars">
                             <i class='bx bxs-star'></i>
                             <i class='bx bxs-star'></i>
@@ -96,10 +131,10 @@
                 </div>
 
                 <div class="products">
-                    <img src="images/men5.jpg" alt="Shoes">
+                    <img src="images/women3.jpg" alt="Shoes">
                     <div class="desc">
-                        <span>Adidas</span>
-                        <h5>NMD_R1 Primeblue Shoes - White</h5>
+                        <span>Nike</span>
+                        <h5>Nike Court Legacy Lift</h5>
                         <div class="stars">
                             <i class='bx bxs-star'></i>
                             <i class='bx bxs-star'></i>
@@ -107,16 +142,101 @@
                             <i class='bx bxs-star'></i>
                             <i class='bx bxs-star'></i>
                         </div>
-                        <h4>$165</h4>
+                        <h4>$115</h4>
                     </div>
                     <a href="#"><i class='bx bx-cart-alt cart'></i></a>
                 </div>
 
                 <div class="products">
-                    <img src="images/newbalshoes1.jpg" alt="Shoes">
+                    <img src="images/adw1.jpg" alt="Shoes">
+                    <div class="desc">
+                        <span>Adidas</span>
+                        <h5>Adizero Prime X Strung</h5>
+                        <div class="stars">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                        </div>
+                        <h4>$190</h4>
+                    </div>
+                    <a href="#"><i class='bx bx-cart-alt cart'></i></a>
+                </div>
+
+                <div class="products">
+                    <img src="images/adw2.jpg" alt="Shoes">
+                    <div class="desc">
+                        <span>Adidas</span>
+                        <h5>Adizero X Allbirds 2.94 KG CO2E</h5>
+                        <div class="stars">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                        </div>
+                        <h4>$170</h4>
+                    </div>
+                    <a href="#"><i class='bx bx-cart-alt cart'></i></a>
+                </div>
+
+                <div class="products">
+                    <img src="images/adw3.jpg" alt="Shoes">
+                    <div class="desc">
+                        <span>Adidas</span>
+                        <h5>Duramo SL 2.0 Shoes</h5>
+                        <div class="stars">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                        </div>
+                        <h4>$115</h4>
+                    </div>
+                    <a href="#"><i class='bx bx-cart-alt cart'></i></a>
+                </div>
+
+                <div class="products">
+                    <img src="images/new1.jpg" alt="Shoes">
+                    <div class="desc">
+                        <span>New Balance</span>
+                        <h5>Fresh Foam X More v4</h5>
+                        <div class="stars">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                        </div>
+                        <h4>$150</h4>
+                    </div>
+                    <a href="#"><i class='bx bx-cart-alt cart'></i></a>
+                </div>
+
+                <div class="products">
+                    <img src="images/new2.jpg" alt="Shoes">
                     <div class="desc">
                         <span>New Balance</span>
                         <h5>Fresh Foam X 880v12</h5>
+                        <div class="stars">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                        </div>
+                        <h4>$135</h4>
+                    </div>
+                    <a href="#"><i class='bx bx-cart-alt cart'></i></a>
+                </div>
+
+                <div class="products">
+                    <img src="images/new3.png" alt="Shoes">
+                    <div class="desc">
+                        <span>New Balance</span>
+                        <h5>Fresh Foam RoaV Elite</h5>
                         <div class="stars">
                             <i class='bx bxs-star'></i>
                             <i class='bx bxs-star'></i>
@@ -128,23 +248,6 @@
                     </div>
                     <a href="#"><i class='bx bx-cart-alt cart'></i></a>
                 </div>
-
-                <div class="products">
-                    <img src="images/men6.jpg" alt="Shoes">
-                    <div class="desc">
-                        <span>Adidas</span>
-                        <h5>Forum Low Shoes - White</h5>
-                        <div class="stars">
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                        </div>
-                        <h4>$125</h4>
-                    </div>
-                    <a href="#"><i class='bx bx-cart-alt cart'></i></a>
-                </div>  
 
             </div>
         </div>
