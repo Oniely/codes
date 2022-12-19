@@ -1,5 +1,11 @@
 <RCC>
   <qresource prefix="images">
+    <file>sc.png</file>
+    <file>sc.png</file>
+    <file>scs.png</file>
+    <file>Southland Fest.png</file>
+    <file>Southland Fest.png</file>
+    <file>add (1).png</file>
     <file>signout.png</file>
     <file>add.png</file>
     <file>calendar.png</file>

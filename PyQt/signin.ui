@@ -246,6 +246,41 @@ border: 0;</string>
     </property>
    </widget>
   </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1280</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="title">
+     <string>...</string>
+    </property>
+    <addaction name="admin"/>
+   </widget>
+   <addaction name="menu"/>
+  </widget>
+  <action name="actionAdmin">
+   <property name="text">
+    <string>Admin</string>
+   </property>
+  </action>
+  <action name="admin">
+   <property name="text">
+    <string>Admin</string>
+   </property>
+  </action>
  </widget>
  <resources>
   <include location="../CODINGz/Gencaya_OOP/res.qrc"/>
